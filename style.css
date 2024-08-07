@@ -1,0 +1,294 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.portfolio-sections{
+    height: 800px;
+    width: 70%;
+    border: 2px solid black;
+    align-items: center;
+    background-color:black;
+}
+.home-info{
+	height: 800px;
+	width: 70%;
+	align-items: center;
+}
+.navigation-bar{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    
+}
+.portfolio-sections h1{
+    margin-top: 50px;
+}
+html{
+    scroll-behavior: smooth;
+}
+.main-container{
+    position: relative;
+    top:50px;
+	height: 800 px;
+}
+.brand{
+    font-size: 30px;
+    font-family: Arial Black;
+    font-variant: small-caps;
+    color: paleturquoise;
+}
+.navmenu{
+    color: black;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    padding-left: 15px;
+}
+.navmenu:hover{
+    text-decoration: underline 2px solid black;
+    text-underline-offset: 6px;
+    
+}
+.tracking-in-expand {
+	-webkit-animation: scale-up-hor-left 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) NaNms infinite both;
+	        animation: scale-up-hor-left 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) NaNms infinite both;
+}
+@-webkit-keyframes scale-up-hor-left {
+  0% {
+    -webkit-transform: scaleX(0.4);
+            transform: scaleX(0.4);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+  }
+}
+@keyframes scale-up-hor-left {
+  0% {
+    -webkit-transform: scaleX(0.4);
+            transform: scaleX(0.4);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+  }
+}
+#home{
+   height: 370px;
+   background-image: url("https://learn.microsoft.com/en-us/training/media/career-paths/developer/Azure%20Developer.png");
+   background-repeat: no-repeat;
+   background-size:40%;
+   background-position:90% 50%;
+   border: none;
+}
+
+#home-info{
+    position: absolute;
+    top: 20px;
+    width: 400px;
+    height: 250px;
+    font-size: 25px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.info{
+    font-weight: bolder;
+    color: lightslategray;
+}
+.designation{
+    color: goldenrod;
+    font-size: 25px;
+    font-weight: bolder;
+}
+.myname{
+    font-size: 35px;
+}
+.rsmbtn{
+    height: 40px;
+    width: 100px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size:15px;
+    font-weight: bolder;
+    background-color: burlywood;
+    color: white;
+    transition-duration: 1s;
+}
+.rsmbtn:hover{
+    background-color: white;
+    color: royalblue;
+    border: 3px solid royalblue;
+   
+    transform: scale(1.1);
+}
+.about-section{
+	height: 500px;
+	width: 100%;
+	background-color: whitesmoke;
+}
+.aboutmain{
+	height: 500px;
+	width: 100%;
+	display: flex;
+	font-size: 25px;
+	font-family: sans-serif;
+	font-weight: bolder;
+}
+.aboutmain div{
+	height: 500px;
+	width: 50%;
+}
+.developer{
+	height: 300px;
+	width: 300px;
+	margin-top: 100px;
+	margin-left: 150px;
+	animation-duration: 4s;
+	animation-name: zoom;
+	animation-iteration-count: 5;
+
+}
+@keyframes zoom{
+	100%{
+		transform: scale(1.2);
+		border-radius: 60px;
+	}
+}
+.heading{
+	font-family: Arial Black;
+	text-align: center;
+	margin: 30px 0px;
+	font-size: 40px;
+	color: plum;
+}
+.carrerobj{
+	padding: 50px;
+}
+.carrerinfo{
+	margin-right: 150px;
+	text-align: justify;
+	line-height: 40px;
+	text-indent: 100px;
+	letter-spacing: 1px;
+}
+#skills{
+	height: 600px;
+	width: 100%;
+	background-color: whitesmoke;
+}
+.tbl
+{
+	padding: 5px;
+	margin-left: 5%;
+}
+.tbl tr td{
+	padding: 40px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 5px royalblue;
+	transition-duration: 1.5s;
+}
+.skills-subheading{
+	color: orange;
+	font-family: sans-serif;
+	font-weight: bolder;
+	font-size: 25px;
+	font-variant: small-caps;
+}
+.detailedskills{
+	font-size: 23px;
+	font-weight: bolder;
+	color: rgb(109,101,101);
+	line-height: 40px;
+	word-spacing: 3px;
+	margin-top: 20px;
+}
+.tbl tr td :hover
+{
+	transform: scale(1.05);
+	border: 1px solid gray;
+	box-shadow: 0px 0px 5px gray;
+}
+#projects{
+	height: 700px;
+	width: 100%;
+	padding: 10px;
+
+}
+.project-card-container{
+	padding: 20px;
+}
+.card-title{
+	color: orangered;
+	text-align: center;
+	font-family: sans-serif;
+	font-weight: bolder;
+}
+.card-title:hover{
+	text-decoration: underline 2px solid orangered;
+	text-underline-offset: 5px;
+	cursor: pointer;
+}
+#contact{
+	height: 500px;
+	width: 100%;
+	background-color: whitesmoke;
+	padding: 20px;
+
+}
+.main-container2{
+	height: 400px;
+	width: 100%;
+	display:flex;
+	margin-left: 10%;
+}
+.contact-child{
+	height: 400px;
+	width: 50%;
+
+}
+.contact-info{
+	font-size: 18px;
+	font-family: sans-serif;
+	font-weight: bolder;
+	margin-top: 70px;
+
+}
+.contact-info li{
+	margin-top: 20px;
+}
+.contact-form{
+	padding: 45px;
+	margin-top: 50px;
+	height: 200px;
+	width: 400px;
+}
+.form-group{
+	margin-right: 200px;
+}
+#footer{
+	height: 50px;
+	width: 100%;
+	background-color: royalblue;
+	text-align: center;
+}
+#footerinfo{
+	font-size: 20px;
+	line-height: 50px;
+	color: white;
+}
+.card-img-top{
+	height: 300px;
+	width: 100%px;
+}
